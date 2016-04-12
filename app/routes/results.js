@@ -2,15 +2,15 @@ import config from '../config/environment';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(params) {
+  model: function() {
     var key = config.myApiKey;
-    var url = 'http://api.thewalters.org/v1/objects?apikey='+ key +'&keyword='+params.word+'&classification=Painting';
+    var testWord = encodeURIComponent('&q=kittens');
+
+    var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91'+ testWord;
 
     return Ember.$.getJSON(url).then(function(responseJSON) {
-      var numberOfResults = responseJSON.Items.length;
-      var randomResult = Math.floor(Math.random()*numberOfResults);
-      console.log(responseJSON.Items[randomResult]);
-      return responseJSON.Items[randomResult];
+      console.log(responseJSON.hits[0]);
+      return responseJSON.hits[0];
     });
   }
 });
