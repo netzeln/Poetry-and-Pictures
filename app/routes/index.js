@@ -5,7 +5,8 @@ export default Ember.Route.extend({
 
   actions :{
     wordSearch(params){
-      this.transitionTo('results', params);
+      console.log("indexjs", params);
+      this.transitionTo('results', params.word);
     }
   }
 });

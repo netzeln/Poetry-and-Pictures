@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     wordSearch(){
       var params = {
         word: this.get('searchWord')
-      };
+      };  
       this.sendAction('wordSearch', params);
     }
   }
