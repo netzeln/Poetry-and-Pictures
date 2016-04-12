@@ -5,8 +5,14 @@ export default Ember.Component.extend({
     wordSearch(){
       var params = {
         word: this.get('searchWord')
-      };  
+      };
       this.sendAction('wordSearch', params);
+    },
+    randomSearch(){
+      var params = {
+        word: ""
+      };
+      this.sendAction('randomSearch', params);
     }
   }
 });
