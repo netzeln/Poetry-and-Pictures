@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-export default Model.extend({
+export default DS.Model.extend({
   imageApiId: DS.attr(),
   imgWebUrl: DS.attr(),
   imgPageUrl: DS.attr(),
