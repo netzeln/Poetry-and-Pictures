@@ -1,6 +1,6 @@
 <form >
   <div class="form-group">
-  <h2>Add a Haiku About This Image</h2>
+  <h2>Add a Haiku About This Image <i class="fa fa-pencil-square-o" aria-hidden="true"></i></h2> 
     <label for="title">Title</label>
     {{input type="text" value=title id="title"}}
   </div>
@@ -9,16 +9,16 @@
     {{input type="text" value=author id="author"}}
   </div>
   <div class="form-group">
-    <label for="lineOne">5 Syllables</label>
-    {{input type="text" value=lineOne id="lineOne"}}
+    <label for="lineOne">Line 1</label>
+    {{input type="text" value=lineOne id="lineOne" placeholder="5 Syllables"}}
   </div>
   <div class="form-group">
-    <label for="lineTwo">7 Syllables</label>
-    {{input type="text" value=lineTwo id="lineTwo"}}
+    <label for="lineTwo">Line 2</label>
+    {{input type="text" value=lineTwo id="lineTwo" placeholder="7 Syllables"}}
   </div>
   <div class="form-group">
-    <label for="lineThree">5 Syllables</label>
-    {{input type="text" value=lineThree id="lineThree"}}
+    <label for="lineThree">Line 3</label>
+    {{input type="text" value=lineThree id="lineThree" placeholder="5 Syllables"}}
   </div>
   <button {{action 'savePoem' }}>Add Poem</button>
 </form>

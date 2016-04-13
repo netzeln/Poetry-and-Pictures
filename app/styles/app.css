@@ -1,12 +1,12 @@
 body {
-  margin: 10px;
+  margin: 15px;
   background-color: #F7F0F0;
   font-family: 'Libre Baskerville', serif;
 }
 
 p {
   color: #9197AE;
-  font-weight: bolder;
+  font-size: 16px;
 }
 
 li {
@@ -15,18 +15,37 @@ li {
 img {
   border: 2px solid #9197AE;
 }
+
 footer {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:160px;
+   height:100px;
    width:100%;
    margin-bottom: 5px;
+   color: #9197AE;
+   font-weight: normal;
+   text-align: center;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #9197AE; /* Modern Browsers */
 }
 
 .pixabay {
-  width: 150px;
-  height: 125px;
+  width: 364px;
+  height: 45px;
+}
+
+.contact {
+  border: 2px solid #A3C4BC;
+  padding: 15px;
+}
+
+.contact p, h2 {
+  margin: 10px;
 }
 
 h1, h2 {

@@ -2,8 +2,8 @@
 <form>
   <div class="form-control">
     <label for="searchWord">Enter a keyword to view an image</label>
-    {{input type="text" value=searchWord id="searchWord"}}
+    {{input type="text" value=searchWord id="searchWord" placeholder="dog, apple, etc."}}
   </div>
-  <button {{action 'wordSearch' searchWord}}>Search</button>
   <button {{action 'randomSearch' }}> Random</button>
+  <button {{action 'wordSearch' searchWord}}>Search</button>
 </form>
