@@ -1,1 +1,24 @@
-{{yield}}
+<form >
+  <div class="form-group">
+    <label for="title">Title</label>
+    {{input type="text" value=title id="title"}}
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    {{input type="text" value=author id="author"}}
+  </div>
+  <h2>Add a Haiku</h2>
+  <div class="form-group">
+    <label for="lineOne">5 Syllables</label>
+    {{input type="text" value=lineOne id="lineOne"}}
+  </div>
+  <div class="form-group">
+    <label for="lineTwo">7 Syllables</label>
+    {{input type="text" value=lineTwo id="lineTwo"}}
+  </div>
+  <div class="form-group">
+    <label for="lineThree">5 Syllables</label>
+    {{input type="text" value=lineThree id="lineThree"}}
+  </div>
+  <button {{action 'savePoem' }}>Add Poem</button>
+</form>
