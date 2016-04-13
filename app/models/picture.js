@@ -10,4 +10,4 @@ export default Model.extend({
 });
 
 
-https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91&id=1268609
+//https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91&id=1268609
