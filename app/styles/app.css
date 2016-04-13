@@ -16,6 +16,10 @@ img {
   border: 2px solid #9197AE;
 }
 
+header h1 {
+  text-shadow: 1px 1px #9197AE;
+}
+
 footer {
    position:fixed;
    left:0px;
@@ -33,6 +37,15 @@ footer hr {
   height: 1px;
   background-color: #9197AE; /* Modern Browsers */
 }
+
+.homesearch {
+  margin-top: 50px;
+}
+
+/*#homeSearch {
+  color: #A3C4BC;
+  text-shadow: 1px 1px black;
+}*/
 
 .pixabay {
   width: 364px;

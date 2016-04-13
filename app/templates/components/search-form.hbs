@@ -1,9 +1,10 @@
-<p>This site is a place to share pretty images and user-generated haikus. Enter a keyword (or click "random" below) to get started with an image for inspiration.</p>
+<div class="homesearch"><p>This site is a place to share pretty images and user-generated haikus. Enter a keyword (or click "random" below) to get started with an image for inspiration.</p>
 <form>
   <div class="form-control">
-    <label for="searchWord">Enter a keyword to view an image</label>
+    <label id ="homeSearch" for="searchWord">Enter a keyword to view an image</label>
     {{input type="text" value=searchWord id="searchWord" placeholder="dog, apple, etc."}}
   </div>
   <button {{action 'randomSearch' }}> Random</button>
   <button {{action 'wordSearch' searchWord}}>Search</button>
 </form>
+</div>
