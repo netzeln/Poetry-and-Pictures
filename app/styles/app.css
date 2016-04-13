@@ -1,0 +1,42 @@
+body {
+  margin: 10px;
+  background-color: #F7F0F0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+p {
+  color: #9197AE;
+  font-weight: bolder;
+}
+
+li {
+  list-style: none;
+}
+img {
+  border: 2px solid #9197AE;
+}
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:160px;
+   width:100%;
+   margin-bottom: 5px;
+}
+
+.pixabay {
+  width: 150px;
+  height: 125px;
+}
+
+h1, h2 {
+  color: #A3C4BC;
+}
+
+button {
+  background-color: #A3C4BC;
+  margin: 3px;
+  padding: 2px;
+  /*color: #9197AE;
+  text-shadow: 1px;*/
+}
