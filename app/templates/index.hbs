@@ -1,12 +1,10 @@
 
 
-{{#each model as |picture|}}
-  {{picture-thumb picture=picture}}
-{{/each}}
 {{search-form wordSearch="wordSearch" randomSearch="randomSearch"}}
 
 <div class="gallery">
-
-<!-- gallery thumbnails of images will go here and link to each individual display -->
+  {{#each model as |picture|}}
+  {{picture-thumb picture=picture}}
+  {{/each}}
 
 </div>

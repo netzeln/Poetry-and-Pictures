@@ -1,4 +1,10 @@
-
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
 body {
   margin: 15px;
@@ -42,6 +48,18 @@ a:hover {
   font-weight: bolder;
 }
 
+.gallery {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery img {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  flex: 1;
+}
 
 footer {
    position:fixed;

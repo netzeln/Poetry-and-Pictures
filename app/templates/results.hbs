@@ -1,8 +1,8 @@
 
 
   <div class="page-wrap">
-    {{test-search result=model}}
-    {{add-poem}}
+    <!-- {{test-search result=model}} -->
+    {{test-search addPicture="addPicture" result=model}}
+    {{log result.id}}
+    <!-- {{add-poem}} -->
   </div>
-{{test-search addPicture="addPicture" result=model}}
-result:{{log result.id}}
