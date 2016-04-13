@@ -20,10 +20,22 @@ export default Ember.Route.extend({
       return responseJSON.hits[randomResult];
     });
   },
-  actions: {
-    addPicture(result) {
-      console.log("results.js addPicture", result);
-    }
-  }
 
+  actions: {
+  addPicture(result) {
+    console.log("results.js addPicture", result);
+
+    var params = {
+      imageApiId: result.id,
+      imgWebUrl: result.webformatURL,
+      imgPageUrl: result.pageURL,
+      previewUrl: result.previewURL
+    };
+        console.log('params from addPicture',params);
+    var newPicture = this.store.createRecord('picture', params);
+    console.log('addPicture newPicture', newPicture);
+    newPicture.save();
+
+  }
+}
 });
