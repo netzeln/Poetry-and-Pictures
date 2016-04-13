@@ -1,7 +1,17 @@
+
+
 body {
   margin: 15px;
   background-color: #F7F0F0;
   font-family: 'Libre Baskerville', serif;
+}
+
+.page-wrap {
+  margin-top: 0;
+  width: 800px;
+  height: 100vh
+  margin: 0 auto;
+  z-index: 1;
 }
 
 p {
@@ -12,16 +22,30 @@ p {
 li {
   list-style: none;
 }
+
 img {
   border: 2px solid #9197AE;
 }
 
+header {
+  background-color: #F7F0F0;
+  text-align: center;
+}
+
 header h1 {
   text-shadow: 1px 1px #9197AE;
+  color: #A3C4BC;
+  font-size: 55px;
 }
+
+a:hover {
+  font-weight: bolder;
+}
+
 
 footer {
    position:fixed;
+   /*background-color: #9197AE;*/
    left:0px;
    bottom:0px;
    height:100px;
@@ -30,6 +54,8 @@ footer {
    color: #9197AE;
    font-weight: normal;
    text-align: center;
+   z-index: 5;
+
 }
 
 footer hr {
@@ -39,7 +65,8 @@ footer hr {
 }
 
 .homesearch {
-  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*#homeSearch {
@@ -55,6 +82,14 @@ footer hr {
 .contact {
   border: 2px solid #A3C4BC;
   padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .contact p, h2 {
@@ -67,8 +102,58 @@ h1, h2 {
 
 button {
   background-color: #A3C4BC;
-  margin: 3px;
-  padding: 2px;
-  /*color: #9197AE;
-  text-shadow: 1px;*/
+  margin-top: 8px;
+  margin-right: 4px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 610px) {
+  body {
+    margin: 5px;
+    background-color: #F7F0F0;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .page-wrap {
+    margin-top: 0;
+    width: 100%;
+    /*height: 50vh;*/
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  .homesearch {
+    width: 100%;
+    height: 100vh
+    margin: 0 auto;
+  }
+
+  .homesearch button {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .pixabay {
+    width: 182px;
+    height: 23px;
+  }
+
+  footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:100px;
+  width:100%;
+  color: #9197AE;
+  font-weight: normal;
+  text-align: center;
+  z-index: 5;
+
+  }
+
 }

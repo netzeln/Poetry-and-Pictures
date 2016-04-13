@@ -9,7 +9,7 @@ export default Ember.Route.extend({
           if(params.params !== ""){
             var testWord = encodeURIComponent('&q='+ params.params + '&image_type=photo');
             var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91' + testWord;
-            
+
           }else{
             var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91'+ key;
           }
@@ -20,5 +20,6 @@ export default Ember.Route.extend({
             return responseJSON.hits[randomResult];
           });
         }
-
 });
+
+// savePoem action will be sent up here if the form remains on this page
