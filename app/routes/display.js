@@ -3,16 +3,11 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
 
-  // model: function(picture) {
-  //   // var key = config.myApiKey;
-  //   var thisPicture = this.store.findRecord('picture');
-  //   var pixabayId = encodeURIComponent('&id='+ picture.imageApiId);
-  //   var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91' + pixabayId;
-  //   return Ember.$.getJSON(url).then(function(responseJSON) {
-  //       console.log("display", responseJSON.hits[0]);
-  //     return responseJSON.hits[0];
-  //   });
-  // },
+  model: function(picture) {
+    // var key = config.myApiKey;
+    //  console.log("picture in the model for api", picture);
+    return this.store.findRecord('picture', picture.picture_id);
+  },
 
   actions:{
     savePoem(params){
