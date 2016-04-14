@@ -3,11 +3,16 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     savePoem(){
-      params = {
+      var params = {
         author: this.get('author'),
-        title: this.get('title')
-      }
+        title: this.get('title'),
+        lineOne: this.get('lineOne'),
+        lineTwo: this.get('lineTwo'),
+        lineThree: this.get('lineThree'),
+        picture: this.picture,
+      };
+      this.sendAction('savePoem', params);
     }
   }
-  // This is where we'll write action for savePoem
+
 });
