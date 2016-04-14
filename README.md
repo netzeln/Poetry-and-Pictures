@@ -1,6 +1,6 @@
 # Poetry-pictures
 
-This application pairs offers users the chance to put words to images. After searching a database of images for a particular tag or tags, they can choose an image and put words to it. These words will be saved in a Firebase database along with a reference to the image. Images can have multiple poems associated with them.
+This Ember application offers users the chance to put words to images. After searching a database of images for a particular tag or tags, they can choose an image and put words to it. These words will be saved in a Firebase database along with a reference to the image that inspires them. Images can have multiple poems associated with them.
 
 ### Authors
 * Nic Netzel
