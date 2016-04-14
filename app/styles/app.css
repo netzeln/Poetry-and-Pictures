@@ -148,7 +148,7 @@ margin: 10px;
 }
 
 footer {
-   position:fixed;
+   position: relative;
    /*background-color: #9197AE;*/
    left:0px;
    bottom:0px;
