@@ -13,6 +13,23 @@ body{
   font-family: 'Libre Baskerville', serif;
 }
 
+.image-display {
+  color: #9197AE;
+}
+
+.poem input {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.poem label {
+  color: #9197AE;
+}
+
+#title, #author, #lineOne, #lineTwo, #lineThree, placeholder{
+  font-style: italic;
+}
+
 .nav ul {
 list-style: none;
 background-color: #A3C4BC;
@@ -58,6 +75,8 @@ border: 1px solid #7E9992;
 
   }
 }
+
+
 
 
 .page-wrap {
@@ -144,6 +163,12 @@ footer hr {
 .homesearch {
   width: 100%;
   justify-content: center;
+}
+
+.image-display img {
+  width: 85%;
+  height: 85%;
+  margin: 0 auto;
 }
 
 #searchWord {
@@ -235,6 +260,12 @@ button:hover {
     margin-top: 10px;
     margin-left: 0;
   }
+
+  .poem input {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 
   footer {
   left:0px;
