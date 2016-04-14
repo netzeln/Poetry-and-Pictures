@@ -1,3 +1,5 @@
 <div class="container">
-  <img src="{{picture.previewUrl}}"/>
+  {{#link-to 'display' picture}}<img src="{{picture.previewUrl}}"/>{{/link-to}}
+  <p>{{picture.id}}</p>
+  
 </div>
