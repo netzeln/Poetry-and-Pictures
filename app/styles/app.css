@@ -52,13 +52,14 @@ a:hover {
   border: 2px solid pink;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 50%;
+  justify-content: center;
+  width: 75%;
 }
 
 .gallery img {
 border: 1px solid yellow;
+align-self: baseline;
+margin: 10px;
 
   /*display: flex;
   flex-wrap: wrap;
