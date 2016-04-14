@@ -87,7 +87,7 @@ border: 1px solid #7E9992;
   }
 
   footer {
-    position: fixed;
+    position: relative;
   }
 }
 
