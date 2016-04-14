@@ -1,24 +1,28 @@
-<form >
-  <div class="form-group">
-  <h2>Add a Haiku About This Image </h2>
-    <label for="title">Title</label>
-    {{input type="text" value=title id="title"}}
-  </div>
-  <div class="form-group">
-    <label for="author">Author</label>
-    {{input type="text" value=author id="author" placeholder="your name or alias"}}
-  </div>
-  <div class="form-group">
-    <label for="lineOne">Line 1</label>
-    {{input type="text" value=lineOne id="lineOne" placeholder="5 Syllables"}}
-  </div>
-  <div class="form-group">
-    <label for="lineTwo">Line 2</label>
-    {{input type="text" value=lineTwo id="lineTwo" placeholder="7 Syllables"}}
-  </div>
-  <div class="form-group">
-    <label for="lineThree">Line 3</label>
-    {{input type="text" value=lineThree id="lineThree" placeholder="5 Syllables"}}
-  </div>
-  <button {{action 'savePoem' }}><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Add Poem</button>
-</form>
+{{#if addNewPoem}}
+  <form >
+    <div class="form-group">
+    <h2>Add a Haiku About This Image </h2>
+      <label for="title">Title</label>
+      {{input type="text" value=title id="title"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input type="text" value=author id="author" placeholder="your name or alias"}}
+    </div>
+    <div class="form-group">
+      <label for="lineOne">Line 1</label>
+      {{input type="text" value=lineOne id="lineOne" placeholder="5 Syllables"}}
+    </div>
+    <div class="form-group">
+      <label for="lineTwo">Line 2</label>
+      {{input type="text" value=lineTwo id="lineTwo" placeholder="7 Syllables"}}
+    </div>
+    <div class="form-group">
+      <label for="lineThree">Line 3</label>
+      {{input type="text" value=lineThree id="lineThree" placeholder="5 Syllables"}}
+    </div>
+    <button {{action 'savePoem'}}><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Save Poem</button>
+  </form>
+{{else}}
+  <button {{action 'poemFormShow'}}><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Add a New Poem</button>
+{{/if}}
