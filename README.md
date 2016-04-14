@@ -1,7 +1,12 @@
 # Poetry-pictures
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application pairs offers users the chance to put words to images. After searching a database of images for a particular tag or tags, they can choose an image and put words to it. These words will be saved in a Firebase database along with a reference to the image. Images can have multiple poems associated with them.
+
+### Authors
+* Nic Netzel
+* Cassandra Culkins
+* Hillary Hintzen
+* Bradley Pizzimenti
 
 ## Prerequisites
 
@@ -50,4 +55,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
