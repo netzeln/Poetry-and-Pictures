@@ -6,11 +6,12 @@
 
     <br><br>Also, check out our gallery to see what other users have contributed. Enjoy!
   </p>
-
+<br><br>
+<h2>Search:</h2>
 <form>
   <div id="image-search" class="form-control">
-    <label id ="homeSearch" for="searchWord">Enter a keyword to view an image</label>
-    {{input type="text" value=searchWord id="searchWord" placeholder="dog, apple, etc."}}
+    <label id ="category" for="searchWord">Enter a keyword to view an image:</label>
+    {{input type="text" value=searchWord id="searchWord" placeholder="(dog, apple, etc.)"}}
   </div>
   <button {{action 'randomSearch' }}> Random</button>
   <button {{action 'wordSearch' searchWord}}>Search</button>
