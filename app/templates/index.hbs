@@ -1,6 +1,10 @@
-
+{{search-form wordSearch="wordSearch" randomSearch="randomSearch"}}
+<h3>Gallery:</h3><br>
+<p>Pick an image below to read what users have already submitted,
+  or even to add your own!
+</p><br><br>
 <div class="gallery">
-  {{search-form wordSearch="wordSearch" randomSearch="randomSearch"}}
+
   {{#each model as |picture|}}
     {{picture-thumb picture=picture}}
   {{/each}}
