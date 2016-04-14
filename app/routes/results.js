@@ -2,7 +2,7 @@ import config from '../config/environment';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    imageIdStore: Ember.inject.service('image-id-store'),
+
 
     model: function(params) {
 
@@ -22,7 +22,7 @@ export default Ember.Route.extend({
       });
     },
 
-    actions: {
+  actions: {
     addPicture(result) {
 
 
@@ -35,8 +35,8 @@ export default Ember.Route.extend({
 
       var newPicture = this.store.createRecord('picture', params);
       newPicture.save();
-      this.get('imageIdStore').rememberId(newPicture.id);
       
+
       this.transitionTo('display', newPicture);
     }
   }

@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('image');
   this.route('about');
   this.route('contact');
-  this.route('display', {path:'/display/:id'});
+  this.route('display', {path:'/display/:picture_id'});
 });
 
 export default Router;
