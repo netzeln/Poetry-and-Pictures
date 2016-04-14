@@ -148,7 +148,11 @@ margin: 10px;
 }
 
 footer {
+<<<<<<< HEAD
    position: relative;
+=======
+   position:relative;
+>>>>>>> 773690e8c5aaec4e78f9982e63cfd9247790a64f
    /*background-color: #9197AE;*/
    left:0px;
    bottom:0px;

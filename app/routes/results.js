@@ -7,12 +7,13 @@ export default Ember.Route.extend({
     model: function(params) {
 
       var key = config.myApiKey;
+    
       if(params.params !== ""){
-        var testWord = encodeURIComponent('&q='+ params.params + '&image_type=photo');
-        var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91' + testWord;
-
+        var testWord = encodeURIComponent('&q='+ params.params + '&image_type=photo&per_page=50');
+        var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key='+ key + testWord;
       }else{
-        var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91';
+        var perPage = encodeURIComponent('&per_page=150');
+        var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key='+ key + perPage;
       }
       return Ember.$.getJSON(url).then(function(responseJSON) {
         var numberOfResults = responseJSON.hits.length;
