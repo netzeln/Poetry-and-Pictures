@@ -1,0 +1,10 @@
+model: function(params) {
+  var key = config.myApiKey;
+
+  var pixabayId = encodeURIComponent('&id='+ picture.imageApiId');
+  var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91' + pixabayId;
+  return Ember.$.getJSON(url).then(function(responseJSON) {
+      console.log("display", responseJSON.hits[0]);
+    return responseJSON.hits[0];
+  });
+},
