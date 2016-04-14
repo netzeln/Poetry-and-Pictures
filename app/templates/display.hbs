@@ -1,3 +1,7 @@
 {{temp-picture-display picture=model}}
+{{log "MODEL.POEMS" model.poems}}
 
+{{#each model.poems as |poem|}}
+  {{haiku-display poem=poem}}
+{{/each}}
 {{add-poem savePoem="savePoem" picture=model}}
