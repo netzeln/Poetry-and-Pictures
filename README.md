@@ -16,7 +16,10 @@ This Ember application offers users the chance to put words to images. After sea
 ## Known Bugs
 
 * You need to wrap any API requests with this: <pre><code> https://jsonp.afeld.me/</code></pre> as a proxy since it was not a CORS api. In addition you need to write any additional properties as URI encoded   (ex: "%26q%3DCookies"  instead of "&q=Cookies") using "encodeURIComponent".  See examples in the Api calls in the model
-*
+* API calls need to be made to re-generate larger picture urls because they expire after 24 hours. This could be fixed by storing the image itself in base64 in the database.
+* Nothing currently prevents a duplicate image from being added to the database.
+* In a later version we would implement a creative commons licensing feature for user-submitted poetry (likely a CC-BY-NC-SA).
+
 
 ## Prerequisites
 
@@ -35,9 +38,11 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* create a .env file in your project folder and add <pre><code>export apiKey="YOUR APIKEY HERE"</code></pre>
 
 ## Running / Development
 
+* $ source. env   (after entering the api key in .env)
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 

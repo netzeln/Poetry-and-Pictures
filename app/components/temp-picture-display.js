@@ -1,11 +1,13 @@
+import config from '../config/environment';
 import Ember from 'ember';
 
 export default Ember.Component.extend({
   imageUrl: "",
   init() {
+    var key = config.myApiKey;
     this._super();
     var pixabayId = encodeURIComponent('&id='+ this.get('picture.imageApiId'));
-    var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=2381172-26b42eade332e81b615568b91' + pixabayId;
+    var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=' + key + pixabayId;
     var self = this;
     Ember.$.getJSON(url).then(function(responseJSON) {
       console.log("inside promise", responseJSON.hits[0].webformatURL);
