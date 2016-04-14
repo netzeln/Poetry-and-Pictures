@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
+    poemFormShow(){
+      this.set('addNewPoem', true);
+    },
     savePoem(){
       var params = {
         author: this.get('author'),
@@ -12,6 +15,7 @@ export default Ember.Component.extend({
         picture: this.picture,
       };
       this.sendAction('savePoem', params);
+      this.set('addNewPoem', false);
     }
   }
 

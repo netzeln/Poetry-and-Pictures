@@ -25,7 +25,6 @@ export default Ember.Route.extend({
   actions: {
     addPicture(result) {
 
-
       var params = {
         imageApiId: result.id,
         imgWebUrl: result.webformatURL,
@@ -35,7 +34,7 @@ export default Ember.Route.extend({
 
       var newPicture = this.store.createRecord('picture', params);
       newPicture.save();
-      
+
 
       this.transitionTo('display', newPicture);
     }
