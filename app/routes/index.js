@@ -3,7 +3,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.findAll('picture');
+    return Ember.RSVP.hash({
+      pictures: this.store.findAll('picture'),
+      poems: this.store.findAll('poem')
+    });
   },
 
   actions :{
