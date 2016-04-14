@@ -7,27 +7,14 @@
 }
 
 body{
-  max-width: 1200px;
+  max-width: 1175px;
   margin: 15px;
   background-color: #F7F0F0;
   font-family: 'Libre Baskerville', serif;
-  margin: auto 0;
-}
-
-.homesearch {
-  margin: 10px;
 }
 
 .image-display {
   color: #9197AE;
-}
-
-.poem {
-  margin-left: 20px;
-}
-
-#ember647 {
-  margin-left:40px;
 }
 
 .poem input {
@@ -90,8 +77,14 @@ border: 1px solid #7E9992;
 }
 
 
+
+
 .page-wrap {
-  margin-left: 30px;
+  margin-top: 0;
+  width: 800px;
+  height: 100vh
+  margin: 0 auto;
+  z-index: 1;
 }
 
 p {
@@ -115,7 +108,6 @@ header h1 {
   text-shadow: 1px 1px #9197AE;
   color: #A3C4BC;
   font-size: 55px;
-  margin: 10px;
 }
 
 a {
@@ -148,7 +140,7 @@ margin: 10px;
 }
 
 footer {
-   position: relative;
+   /*position:fixed;*/
    /*background-color: #9197AE;*/
    left:0px;
    bottom:0px;
@@ -201,7 +193,7 @@ footer hr {
 
 #about {
   width: 100%;
-  margin: 20px;
+  margin: 0 auto;
   align-items: center;
 }
 
@@ -212,8 +204,6 @@ footer hr {
 h1, h2 {
   color: #A3C4BC;
 }
-
-
 
 button {
   color: #677C79;
@@ -245,9 +235,9 @@ button:hover {
   }
 
   header h1 {
-    font-size: 55px;
+    font-size: 65px;
     text-align: left;
-    margin: 0;
+
   }
 
   .homesearch {
@@ -276,17 +266,8 @@ button:hover {
     margin: 0 auto;
   }
 
-  .poem {
-    margin-left: 0;
-  }
-
-  #ember647 {
-    margin-left: 0;
-  }
-
 
   footer {
-  position: relative;
   left:0px;
   bottom:0px;
   height:100px;
