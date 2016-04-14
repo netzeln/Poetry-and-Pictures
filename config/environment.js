@@ -4,7 +4,15 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'poetry-pictures',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+        'default-src': "'none'",
+        'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+        'font-src': "'self'",
+        'connect-src': "'self' wss://*.firebaseio.com",
+        'img-src': "'self' *",
+        'style-src': "'self' 'unsafe-inline'",
+        'frame-src': "'self' https://*.firebaseio.com" },
     firebase: 'https://poeticpictures.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',

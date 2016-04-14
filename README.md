@@ -8,6 +8,16 @@ This Ember application offers users the chance to put words to images. After sea
 * Hillary Hintzen
 * Bradley Pizzimenti
 
+## Special Setup/Installation Requirements
+* You will need to sign up for a free account at [Pixabay](http://www.pixabay.com) to get an API key. See their [documentation](https://pixabay.com/api/docs/) for more details.
+
+* _See Below for more details_
+
+## Known Bugs
+
+* You need to wrap any API requests with this: <pre><code> https://jsonp.afeld.me/</code></pre> as a proxy since it was not a CORS api. In addition you need to write any additional properties as URI encoded   (ex: "%26q%3DCookies"  instead of "&q=Cookies") using "encodeURIComponent".  See examples in the Api calls in the model
+*
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -17,6 +27,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+
 
 ## Installation
 
