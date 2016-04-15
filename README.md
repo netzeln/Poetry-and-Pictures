@@ -44,7 +44,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* $ source. env   (after entering the api key in .env)
+* run ```source .env``` from within the project folder
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
