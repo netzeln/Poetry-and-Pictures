@@ -13,11 +13,13 @@ body{
   font-family: 'Libre Baskerville', serif;
 }
 
+
+
 .image-display {
   color: #9197AE;
 }
 
-.image-display img {
+.temporary img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -34,6 +36,15 @@ body{
 
 #title, #author, #lineOne, #lineTwo, #lineThree, placeholder{
   font-style: italic;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.haiku {
+  color: #9197AE;
 }
 
 .nav ul {
@@ -80,9 +91,9 @@ border: 1px solid #7E9992;
     font-size: 60px;
   }
 
-  .image-display img {
-    width: 75%;
-    height: 75%;
+  .temporary img {
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
   }
 
@@ -243,15 +254,19 @@ button:hover {
     z-index: 1;
   }
 
+  .page-wrap img {
+    width: 100%;
+  }
+
   header h1 {
     font-size: 65px;
     text-align: left;
-
+    font-size: 55px;
   }
 
-  .image-display img {
-    width: 75%;
-    height: 75%;
+  .temporary img {
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
   }
 
