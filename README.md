@@ -15,8 +15,8 @@ This Ember application offers users the chance to put words to images. After sea
 
 ## Known Bugs
 
-* THE PROXY SERVER MIGHT BE DOWN
-* Currently: You need to wrap any API requests with this: <pre><code> https://jsonp.afeld.me/</code></pre> as a proxy since it was not a CORS api. In addition you need to write any additional properties as URI encoded   (ex: "%26q%3DCookies"  instead of "&q=Cookies") using "encodeURIComponent".  See examples in the Api calls in the model
+* THE PROXY SERVER MIGHT BE DOWN. In a non devlopment build of this project we would use our own server to make the requests.
+* Currently: You need to wrap any API requests with this: <pre><code> https://jsonp.afeld.me/</code></pre> as a proxy since it was not a CORS api. In addition you need to write any additional properties as URI encoded   (ex: "%26q%3DCookies"  instead of "&q=Cookies") using "encodeURIComponent".  See examples in the Api calls in the model on the 'results' route.
 * API calls need to be made to re-generate larger picture urls because they expire after 24 hours. This could be fixed by storing the image itself in base64 in the database.
 
 * Nothing currently prevents a duplicate image from being added to the database.
@@ -44,7 +44,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* $ source. env   (after entering the api key in .env)
+* run `$ source. env`   (after entering the api key in .env file you created first)
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
