@@ -10,7 +10,6 @@ export default Ember.Component.extend({
     var url = 'https://jsonp.afeld.me/?url=https://pixabay.com/api/?key=' + key + pixabayId;
     var self = this;
     Ember.$.getJSON(url).then(function(responseJSON) {
-      console.log("inside promise", responseJSON.hits[0].webformatURL);
       self.set('imageUrl', responseJSON.hits[0].webformatURL);
     });
   }

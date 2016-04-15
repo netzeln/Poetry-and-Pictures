@@ -4,8 +4,6 @@ export default Ember.Route.extend({
 
 
   model: function(picture) {
-    // var key = config.myApiKey;
-    //  console.log("picture in the model for api", picture);
     return this.store.findRecord('picture', picture.picture_id);
   },
 
@@ -21,4 +19,4 @@ export default Ember.Route.extend({
       this.transitionTo('display', params.picture);
     }
   }
-})
+});
